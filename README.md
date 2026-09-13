@@ -2,8 +2,6 @@
 
 一个简单的 Edge TTS 命令行工具，用 Python 把文本转换成 MP3 语音文件。
 
-This is a small Edge TTS command-line tool that converts text into MP3 speech files with Python.
-
 ## 功能 Features
 
 - 支持日语、英语、粤语等 Edge TTS 声音
@@ -13,18 +11,9 @@ This is a small Edge TTS command-line tool that converts text into MP3 speech fi
 - 使用 `--write-media` 指定输出 MP3 文件
 - 内置常用声音列表和执行示例
 
-- Supports Edge TTS voices for Japanese, English, Cantonese, and more
-- Uses `ja-JP-NanamiNeural` as the default voice
-- Uses `-20%` as the default speech rate
-- Accepts text with `--text`
-- Writes MP3 output with `--write-media`
-- Includes common voice names and usage examples in help output
-
 ## 安装 Installation
 
 需要 Python 3，并安装 `edge-tts`：
-
-Requires Python 3 and the `edge-tts` package:
 
 ```bash
 python3 -m pip install edge-tts
@@ -113,9 +102,3 @@ python3 tts.py --voice zh-HK-HiuMaanNeural --text "我好鍾意食芫荽。" --w
 - `--text`: 要转换成语音的文本。生成 MP3 时必填。
 - `--write-media`, `-o`: 输出 MP3 文件路径。
 - `--list-voices`: 列出脚本内置的常用声音，然后退出。
-
-- `--voice`: Voice name. Defaults to `ja-JP-NanamiNeural`.
-- `--rate`: Speech rate. Defaults to `-20%`. For example, `+10%` is 10% faster and `-15%` is 15% slower.
-- `--text`: Text to convert to speech. Required when generating an MP3.
-- `--write-media`, `-o`: Output MP3 file path.
-- `--list-voices`: List common voices bundled in this script, then exit.
